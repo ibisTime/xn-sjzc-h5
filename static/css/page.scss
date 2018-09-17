@@ -1,0 +1,535 @@
+@import "./mixin";
+@import "./global";
+
+//应用页面
+// 搜索区
+.wrap{
+    padding:0 .3rem;
+}
+.search{
+    position:relative;
+    margin-bottom:0.16rem;
+    width:100%;
+    height:0.64rem;
+    margin-top:0.2rem;
+    .inp{
+        width:100%;
+        height:0.64rem;
+        background: #F4F4F4;
+        border-radius: 0.78rem;
+        font:0.28rem/0.4rem PingFangSC-Regular;
+        color: #999;
+        text-indent:0.66rem;
+    }
+    .icon{
+        width:0.28rem;
+        height:0.28rem;
+        position:absolute;
+        left:0.3rem;
+        top:0.2rem;
+    }
+
+}
+
+// 搜索页里的搜索
+.search1{
+    position:relative;
+    margin:0.2rem auto 0.16rem;
+    width:6.9rem;
+    height:0.64rem;
+    .inp{
+        width:6rem;
+        height:100%;
+        background: #F4F4F4;
+        border-radius: 1.56rem;
+        font: 0.28rem/0.4rem PingFangSC-Regular;
+        color: #333;
+        text-indent:0.66rem;
+    }
+    .icon{
+        width:0.28rem;
+        height:0.28rem;
+        position:absolute;
+        left:0.3rem;
+        top:0.16rem;
+    } 
+    .icon2{
+        width:0.28rem;
+        height:0.28rem;
+        position:absolute;
+        left:5.52rem;
+        top:0.2rem;
+    }
+    span{
+        font:0.32rem/0.44rem PingFangSC-Regular;
+        color: #999;
+        position:absolute;
+        right:0;
+        top:0.1rem;   
+    }
+}
+
+
+//banner区
+.bannerImg{
+    width:100%;
+    margin:0 auto;
+    margin-bottom:0.4rem;
+    img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+} 
+
+// 入门必备 
+.mainHead .text1{
+    position: relative;
+    text-align:center;
+    .men{
+        width:0.3rem;
+        height:0.24rem;
+        vertical-align:baseline;
+    }
+    .txt1{
+        font:0.36rem/0.48rem PingFangSC-Medium;
+        color: #333;
+        text-align: center;
+        margin:0 0.2rem;
+    }
+}
+
+.HeadAPP{
+    height: 2.6rem;
+    display:flex;
+    justify-content:space-around;
+
+    .imgWrap{
+        width:1.08rem;
+        height:1.08rem;
+        border-radius: .2rem;
+        margin-top: 0.44rem;
+        margin-bottom: 0.2rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+//      box-shadow: 0 0 .04rem rgba(99,99,99,.2);
+    }
+
+    .HeadApp .men1{
+        width:1.08rem;
+        height:1.08rem;
+    }
+
+    .HeadApp p{
+        font:0.26rem/0.26rem PingFangSC-Regular;
+        color: #333;
+        text-align: center;
+        margin-bottom:0.6rem;
+        width: 1.2rem;
+        position: relative;
+        left: -.06rem;
+        word-wrap: break-all;
+        
+//      white-space: nowrap;
+//      text-overflow: ellipsis;
+//      overflow: hidden;
+    }
+}
+
+
+//app列表
+.main{
+    margin-bottom:0.68rem;
+    .lan{
+        display:inline-block;
+        width:0.06rem;
+        height:0.28rem;
+        background:#007AFF;
+        border-radius: 0.16rem;
+        margin-right:0.12rem;
+    }
+    h3{
+        font:0.34rem/0.48rem PingFangSC-Medium;
+        color: #333;
+        display:inline-block;
+    }
+    .Main{
+        width:100%;
+        height:1.6rem;
+        position: relative;
+        border-bottom:0.01rem solid #E3E3E3;
+        .mainPic{
+            width:1.08rem;
+            height:1.08rem;
+            position:absolute;
+            left:0.02rem;
+            top:0.26rem;
+//          box-shadow: 0 0 0.04rem rgba(99, 99, 99, 0.2);
+            border-radius:.2rem;
+            overflow: hidden;
+        }
+    
+        .text{
+            margin:0.44rem 0;
+            position:absolute;
+            left:1.3rem;
+            .txt1{
+                font:0.28rem/0.28rem PingFangSC-Regular;
+                color: #333;
+            }
+            .txt2{
+                width: 4.7rem;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font:0.24rem/0.35rem PingFangSC-Regular;
+                color: #999;
+                margin-top:0.2rem;
+            
+            }
+        }
+    
+        .down{
+            position:absolute;
+            right:0;
+            text-align: center;
+    
+            .downPic{
+                width:0.46rem;
+                height:0.46rem;
+                position:absolute;
+                right:0.2rem;
+                top:0.45rem;
+            }
+            span{
+                font:0.2rem/0.2rem PingFangSC-Regular;
+                color: #999;
+                position:absolute;
+                right: 0;
+                top: 1rem;
+                display: inline-block;
+                width: .9rem;
+                text-align: center;
+            }
+            
+        }
+          
+    }  
+
+}
+
+
+
+// 列表详情页
+.head{
+    margin:0.38rem 0;
+
+    .listPic{
+        width: 1.78rem;
+        height: 1.78rem;
+        border-radius: .2rem;
+        overflow: hidden;
+        float:left;
+        margin-right:0.24rem;
+        img{
+            width:1.78rem;
+            height:1.78rem;
+        }
+    }
+    .text{
+        float: left;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height:1.6rem;
+    }
+
+    .pub{
+        width:1.2rem;
+        height:0.46rem;
+        font:0.24rem/0.34rem PingFangSC-Regular;
+        color: #fff;
+        padding:0.08rem 0.36rem;
+        background-image: linear-gradient(-132deg,#2871FB  0%, #0848DF 100%);
+        border-radius: 2rem;
+        margin-left:0.2rem;
+    }
+
+    .txt1{
+        font:0.36rem/0.28rem PingFangSC-Medium;
+        color: #333;
+    }
+
+    .txt2{
+        font:0.24rem/0.4rem PingFangSC-Regular;
+        color: #999;
+    }
+}
+
+.banner1{
+    width:100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 7.6rem;
+    margin-bottom:0.3rem;
+   
+    ul{
+        overflow: hidden;
+        li{
+            width: 4.26rem;
+            height: 7.6rem;
+            float: left;   
+            padding-right:0.3rem;
+            
+            div{
+                width: 3.96rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border-radius: .26rem;
+            }
+        }
+    }
+    
+}
+
+
+hr{
+    border:none;
+    width:100%;
+    height:0.02rem;
+    background:#E3E3E3;
+    margin:0.4rem 0;
+}
+
+
+.listmain {
+    margin-bottom:1.1rem;
+    .listMain{    
+        h4{
+            font:bold 0.3rem/0.42rem PingFangSC-Medium;
+            color: #333;
+            margin-bottom:0.18em;
+        }
+    
+        p{
+            font:0.26rem/0.48rem PingFangSC-Regular;
+            color: #808080;
+        }     
+    }
+}
+
+
+
+
+
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    text-align:center;
+    width:100%;
+    background: #fff;
+    box-shadow: 1px 0 10px 0 rgba(43,84,149,0.12);
+    padding: 0 .3rem;
+}
+
+.footer .downLoad{
+    float: right;
+    width: 5rem;
+    height: 0.72rem;
+    margin-bottom: 0.18rem;
+    margin-top: 0.2rem;
+    background-image: -webkit-linear-gradient(222deg, #2871FB 0%, #0848DF 100%);
+    background-image: -moz- oldlinear-gradient(222deg, #2871FB 0%, #0848DF 100%);
+    background-image: linear-gradient(-132deg, #2871FB 0%, #0848DF 100%);
+    -webkit-border-radius: 2rem;
+    border-radius: 2rem;
+    border: none;
+    font: 0.32rem/0.72rem PingFangSC-Regular;
+    color: #fff;
+}
+.footer .goIndex{
+    float: left;
+    width: 1.6rem;
+    height: 0.72rem;
+    margin-bottom: 0.18rem;
+    margin-top: 0.2rem;
+    background-image: -webkit-linear-gradient(222deg, #2871FB 0%, #0848DF 100%);
+    background-image: -moz- oldlinear-gradient(222deg, #2871FB 0%, #0848DF 100%);
+    background-image: linear-gradient(-132deg, #2871FB 0%, #0848DF 100%);
+    -webkit-border-radius: 2rem;
+    border-radius: 2rem;
+    border: none;
+    font: 0.32rem/0.72rem PingFangSC-Regular;
+    color: #fff;
+    
+    img{
+        width: .46rem;
+        margin-bottom: .14rem;
+        vertical-align: bottom;
+    }
+}
+
+.laydate_box{
+    left: 1rem !important;
+}
+//应用上传页面
+.itemPublic{
+    height:1.1rem;
+    .tag2{
+        text-indent:1.4rem;
+    }
+    .andio{
+        position: absolute;
+        left: 0;
+        width: 1.8rem;
+    }
+    .conWrap{
+        height:1.1rem;
+        width: 3.6rem;
+    }
+}
+
+
+#dataWrap {
+    line-height:1.1rem;
+    text-indent:0.5rem;
+}
+
+#dataWrap1 {
+    line-height:1.1rem;
+    text-indent:0.5rem;
+}
+
+.titltPulic{
+    font:0.28rem/1.1rem PingFangSC-Regular;
+    color: #666;
+    text-align: justify;
+
+}
+
+.selected{
+    font:0.3rem/1.1rem PingFangSC-Regular;
+    color: #333;
+    width:3rem;
+    text-indent:1.2rem;
+    background:url(../images/下啦@3x.png) no-repeat 2.7rem 0.5rem;
+    background-size:0.25rem 0.15rem;
+}
+
+input{
+    width:60%;
+}
+
+.appName{
+    font:0.3rem/0.42rem PingFangSC-Regular;
+    color: #999;
+    text-indent:0.8rem;
+}
+
+.slogan{
+    font:.28rem/.8rem PingFangSC-Regular;
+    color: #666;
+}
+
+.dicription{
+    font:.26rem/.36rem PingFangSC-Regular;
+    color: #999;
+}
+
+.uploadBtn{
+    width:1.6rem;
+    height:1.6rem;
+    background:url(../images/添加@2x.png) no-repeat 0 0;
+    background-size:1.6rem 1.6rem;
+}
+
+
+.picWrap{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .solgan{
+        line-height:.8rem;
+        display: inline-block;
+        width: 100%;
+    }
+    .pic{
+        width:1.6rem;
+        height:1.6rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+        float:left;
+        position: relative;
+        margin: .15rem .05rem ; 
+        .delete {
+            display:block;
+            width:0.3rem;
+            height:0.3rem;
+            background-image:url(../images/删除@3x.png);
+            background-size:0.3rem;
+            position: absolute;
+            top: -0.1rem;
+            right: -0.1rem;
+        }
+    }
+
+}
+
+
+#uploadContainer{
+    margin: .15rem .05rem .15rem 0;
+}
+
+#uploadBtn1{
+    background:url(../images/更多@3x.png) no-repeat right center;
+    background-size:0.15rem 0.26rem;
+}
+
+.showApp{
+    width:0.9rem;
+    height:0.9rem;
+    position:absolute;
+    top:0.1rem;
+    right:.38rem;
+    background:url(../images/图片@3x.png) no-repeat 0 0;
+    background-size:0.9rem 0.9rem;
+}
+
+.oneUpload{
+    position: relative;
+}
+
+.q11 {
+    height: 0.22rem;    
+    width:0.22rem;
+    margin:0.4rem 0;
+    -webkit-appearance: radio !important;
+    box-sizing: border-box !important;
+}
+
+#labelRadio{
+    margin-right:1.8rem;
+}
+
+footer{
+    width:6.3rem;
+    margin:0.62rem auto;
+    #submitBtn{
+        width:100%;
+        background-image: url(../images/Rectangle5@3x的副本.png);
+        background-size:150%;
+        background-position:center; 
+        font:0.34rem/0.96rem PingFangSC-Regular;
+        color:#fff;
+        text-align: center;
+        border-radius:.2rem;
+    }
+
+}
+
+.input-wrap{
+    position: relative;
+}

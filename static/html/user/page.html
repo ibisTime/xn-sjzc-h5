@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title></title>
+    
+</head>
+
+<body class="bg_fff wrap">
+
+    <!-- 应用页面头部搜索框 -->
+    <div class="search">
+        <input class="inp" type="text" placeholder="">
+        <img class="icon" src="../../images/搜索@3x.png">
+    </div>
+
+    <!-- banner图跳转到应用上传页面 -->
+    <div class="bannerImg" id="pageBanner">
+        <img src="../images/banner@3x.png" alt="">
+    </div>
+
+    <!-- 入门必备 -->
+    <div class="mainHead">
+        <div class="text1">
+            <img class="men" src="../images/左@3x.png" alt="">
+            <span class="txt1 rumen"></span>
+            <img class="men" src="../images/右@3x.png" alt="">
+        </div>
+
+        <!-- 入门必备应用显示区 -->
+        <div class="HeadAPP" id="HeadAPP">
+        </div>
+    </div>
+
+    <!-- 新闻资讯区 -->
+    <div class="main">
+        <span class="lan"></span><h3 class="new1"></h3>
+
+        <!-- 新闻资讯应用显示区 -->
+        <div id="main1"></div>
+    </div>
+
+    <!-- 行情软件区 -->
+    <div class="main">
+        <span class="lan"></span><h3 class="new2"></h3>
+
+        <!-- 行情软件应用显示区 -->
+        <div id="main2">
+        </div>
+    </div>
+    
+
+
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/user/Page']);
+    </script>
+</body>
+
+</html>

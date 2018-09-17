@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title></title>
+</head>
+
+<body class="bg_fff wrap">
+
+	<!-- 应用详情页面头部 -->
+	<div class="head clearfix" id="head1">
+	</div>
+
+	<!-- 详情页图片区 -->
+	<div class="banner1" id="banner1">
+		<ul></ul>
+	</div>
+
+	<hr>
+
+	<!-- 应用信息区 -->
+	<div class="listmain">
+
+		<!-- 基本信息 -->
+		<h4 class="mess"></h4>
+		<div class="listMain" id="listmain1">
+		</div>
+
+		<hr>
+
+		<!-- 应用描述 -->
+		<h4 class='disc'></h4>
+		<div class="listMain " id="listMain2">
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- 应用安装 -->
+	<div class="footer">
+		<a class="goIndex" href="../user/page.html" style="width: 1.6rem;"><img src="../../images/home-白.png" /></a>
+		<button id="appDownLoad" class="downLoad upload_ios upload_android"></button>
+	</div>
+
+	<link rel="import" href="../footer.html?__inline">
+	<script>
+		require(['app/controller/user/List']);
+	</script>
+</body>
+
+</html>

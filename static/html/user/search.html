@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title></title>
+</head>
+
+<body class="bg_fff wrap">
+	<!-- 搜索页面搜索框 -->
+	<header>
+		<div class="search1">
+			<input class="inp" type="text" placeholder="">
+			<img class="icon" src="../images/搜索@3x.png">
+			<img class="icon2" src="../images/删除@3x.png">
+			<span class="cancel" id="cancel"></span>
+		</div>
+	</header>
+
+	<!-- 应用列表内容区 -->
+	<div class="main" id="main1">
+	</div>
+
+	<link rel="import" href="../footer.html?__inline">
+	<script>
+		require(['app/controller/user/Search']);
+	</script>
+</body>
+
+</html>

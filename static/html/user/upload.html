@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title></title>
+</head>
+
+<body class="bg_fff wrap">
+	<div class="addApps">
+		<form id="formWrapper">
+
+			<!-- 分类 -->
+			<div class="select b_e_b itemPublic clearfix">
+				<span class="titltPulic classification"></span>
+				<select class="selected fr" id="category" name="category">
+				</select>
+			</div>
+
+			<!-- 应用名称 -->
+			<div class="item-wrap ">
+				<div class="input-wrap b_e_b itemPublic">
+					<span class="theApplicationName txt titltPulic"></span>
+					<input class="appName appName1" id="name" name="name" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 图标（单图上传） -->
+			<div id="uploadContainer1" class="item-wrap oneUpload ">
+				<div id="uploadBtn1" class="input-wrap b_e_b itemPublic">
+					<span class="iconChoose txt titltPulic"></span>
+					<div class="showApp" id="showAvatar1"></div>
+				</div>
+			</div>
+
+			<!-- 标签 -->
+			<div class="item-wrap ">
+				<div class="input-wrap b_e_b itemPublic">
+					<span class="txt titltPulic theLabel"></span>
+					<input id="tag" name="tag" class="appName tag2" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 标语 -->
+			<div class="item-wrap slogan">
+				<div class="txt solgan theSolgan"></i>
+				</div>
+				<div class="input-wrap b_e_b">
+					<input id="slogan" name="slogan" class="dicription theSolganDicr" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 描述 -->
+			<div class="item-wrap slogan">
+				<div class="txt describe"></i>
+				</div>
+				<div class="input-wrap b_e_b">
+					<input id="description" name="description" class="dicription describeDicr" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 截图（多图上传） -->
+			<div class="picWrap b_e_b pb30" id="picWrap">
+				<span class="txt solgan screenshots"></span>
+				<div id="uploadContainer" class="fileWrap fl">
+					<div id="uploadBtn" class="uploadBtn wp100 hp100">
+						<div class="addbackPdf"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 安卓版本号 -->
+			<div class="item-wrap itemPublic">
+				<div class="input-wrap b_e_b">
+					<span class="txt titltPulic androidVersion"></span>
+					<input id="androidVersion" name="androidVersion" class="appName" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 安卓更新时间 -->
+			<div class="item-wrap itemPublic ">
+				<div class="input-wrap b_e_b over-hide">
+					<span class=" fl txt titltPulic androidUpdateTime"></span>
+					<div class="fl conWrap sendDatetime-wrap">
+						<div class="startDatetime wp100 hp100" id="dataWrap"></div>
+						<samp class="error hidden">不能为空</samp>
+					</div>
+				</div>
+			</div>
+
+			<!-- 安卓包大小 -->
+			<div class="item-wrap itemPublic">
+				<div class="input-wrap b_e_b">
+					<span class="txt titltPulic androidPackageSize"></span>
+					<input id="androidSize" name="androidSize" class="appName" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 安卓下载地址 -->
+			<div class="item-wrap slogan">
+				<div class="txt solgan androidDownUrl"></i>
+				</div>
+				<div class="input-wrap b_e_b">
+					<input id="androidUrl" name="androidUrl" class="dicription" type="text" placeholder="" />
+				</div>
+			</div>
+
+
+			<!-- 苹果版本号 -->
+			<div class="item-wrap itemPublic">
+				<div class="input-wrap b_e_b">
+					<span class="txt titltPulic appleVersion"></span>
+					<input id="iosVersion" name="iosVersion" class="appName" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 苹果更新时间 -->
+			<div class="item-wrap itemPublic ">
+				<div class="input-wrap b_e_b over-hide">
+					<span class=" fl txt titltPulic appleUpdateTime"></span>
+					<div class="fl conWrap sendDatetime-wrap">
+						<div class="startDatetime wp100 hp100" id="dataWrap1"></div>
+						<samp required class="error hidden">不能为空</samp>
+					</div>
+				</div>
+			</div>
+
+			<!-- 苹果包大小 -->
+			<div class="item-wrap itemPublic">
+				<div class="input-wrap b_e_b">
+					<span class="txt titltPulic applePackageSize"></span>
+					<input id="iosSize" name="iosSize" class="appName" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 苹果下载地址 -->
+			<div class="item-wrap slogan">
+				<div class="txt solgan appleDownUrl"></i>
+				</div>
+				<div class="input-wrap b_e_b">
+					<input id="iosUrl" name="iosUrl" class="dicription" type="text" placeholder="" />
+				</div>
+			</div>
+
+			<!-- 是否入门必备 -->
+			<div class="item-wrap  b_e_b">
+				<div class="input-wrap">
+					<span class="txt titltPulic introductionToEssential"></span>
+				</div>
+
+				<label id="labelRadio" for="q11">
+					<input class="q11" type="radio" value="1" name="isNecessary"><samp class="isNecessary1"></samp>
+				</label>
+				<label id="labelRadio" for="q11">
+					<input checked class="q11" type="radio" value="0" name="isNecessary"><samp class="isNecessary0"></samp>
+				</label>
+			</div>
+
+			<!-- 提交 -->
+			<footer>
+				<input id="submitBtn" type="button" value="">
+
+			</footer>
+
+		</form>
+
+	</div>
+
+	<script type="text/javascript" src="../../js/lib/qiniu/plupload.full.min.js"></script>
+	<script type="text/javascript" src="../../js/lib/qiniu/qiniu.min.js"></script>
+	<script src="../../js/lib/laydate/laydate.dev.js"></script>
+	<link rel="import" href="../footer.html?__inline">
+
+	<script>
+		require(['app/controller/user/Upload']);
+	</script>
+</body>
+
+</html>
